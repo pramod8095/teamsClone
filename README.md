@@ -1,72 +1,70 @@
-# React: Teams and Channels List Application
+# Getting Started with Create React App
 
-Complete a partially completed React teams and channel list application. Certain core React functionalities have already been implemented. Complete the application as shown below in order to pass all the unit tests.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![](https://hrcdn.net/s3_pub/istreet-assets/u0qgNojkcOna3LQygHy6Iw/teams-and-channels.gif)
+## Available Scripts
 
-The application has 2 components:
+In the project directory, you can run:
 
-*   The TeamList component, which presents a list of teams and an input to add a new team.
-*   The Team component, which displays a list of channels for each team and an input to add a new channel.
+### `npm start`
 
-The application has the following functionalities:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-*   For the TeamList component:
-    *   Each team in the teams array has the following keys:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-        *   name: The name of the team. (String)
+### `npm test`
 
-        *   channels: The list of channels belonging to a team. (Channel Array)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-    *   Initially, the "Add Team" button is disabled.
-    *   It becomes enabled only when a **unique**, valid team name having at least one character is entered in the input.
-    *   Upon clicking the enabled "Add Team" button, the team is added to the Teams List.
-*   For the Team component:
-    *   Each channel in a team has the following keys:
+### `npm run build`
 
-        *   name: The name of the channel. (String)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-        *   id: The unique ID for the channel. (Integer)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-    *   Initially, the "Add Channel" button is disabled.
-    *   It becomes enabled only when a **unique**, valid channel name having at least one character is entered in the input.
-    *   Upon clicking the enabled "Add Channel" button, the channel is added to the Team component.
-    *   While adding a new channel, a new unique incremental ID property has to be provided.
-    *   Clicking the _delete_ button on any channel removes it from the list.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-The following data-testid attributes are required in the component for the tests to pass:
+### `npm run eject`
 
-*   The div with the list of teams should have the data-testid attribute 'team-list'.
-*   The lists of channels for each team should have the data-testid attributes 'channel-list-0', 'channel-list-1', and so on.
-*   The 'Add Team' button should have the data-testid attribute 'add-team-btn'.
-*   Each 'Add Channel' button should have the data-testid attribute 'add-channel-btn-0', 'add-channel-btn-1', and so on.
-*   The 'Enter Team Name' input should have the data-testid attribute 'team-name-input'.
-*   Each 'Enter Channel Name' input should have the data-testid attribute 'channel-name-input-0', 'channel-name-input-1', and so on.
-*   Each _delete_ button should have the data-testid attribute 'remove-channel-button-00', 'remove-channel-button-01', and so on, denoting first the team id and then the channel id.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Please note that component has the above data-testid attributes for test cases and certain classes and ids for rendering purposes. It is advised not to change them.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Environment 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-- React Version: 16.13.1
-- Node Version: 14(LTS)
-- Default Port: 8000
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Project Specifications 
+## Learn More
 
-**Read-Only Files**
-- `src/App.test.js`
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-**Commands**
-- run: 
-```bash
-npm start
-```
-- install: 
-```bash
-npm install
-```
-- test: 
-```bash
-npm test
-```
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
